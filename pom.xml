@@ -13,6 +13,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <github.global.server>github</github.global.server>
+        <internal.repo.path>file://C:/Users/Max/SOAPEndPointWS/SOAPEndPointWS/mvn-repo/</internal.repo.path>
     </properties>
 
     <dependencies>
@@ -49,5 +50,13 @@
         </dependency>
             
     </dependencies>
+    
+    <distributionManagement>
+        <repository>
+            <id>internal.repo</id>
+            <name>Internal Repository</name>
+            <url>${internal.repo.path}</url>
+        </repository>
+    </distributionManagement>
     
 </project>
